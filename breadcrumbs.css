@@ -1,10 +1,12 @@
 .breadcrumb {
   text-align: left;
 }
+.breadcrumb li {
+  float: left;
+}
 
 .breadcrumb a {
-  float: left;
-  color: #fff;
+   color: #fff;
   background: darkcyan;
   text-decoration: none;
   position: relative;
@@ -14,11 +16,9 @@
   margin-right: 15px;
   padding: 0 5px;
 }
-.breadcrumb .attribute a {
-  background-color: inherit;
-}
-.breadcrumb .location a::before,
-.breadcrumb .location a::after {
+
+.breadcrumb a::before,
+.breadcrumb a::after {
   content: "";
   position: absolute;
   border-color: darkcyan;
@@ -26,27 +26,27 @@
   border-width: 15px 5px;
 }
 
-.breadcrumb .location a::after {
+.breadcrumb a::before {
+  left: -10px;
+  border-left-color:transparent;
+}
+.breadcrumb a::after {
+  left: 100%;
+}
+
+.breadcrumb a::after {
   left: 100%;
   border-color: transparent;
   border-left-color: darkcyan;
 }
-.breadcrumb .location a::before {
-  left: -10px;
-  border-left-color: transparent;
-}
 
-.attribute a{
-  color: gray;
-}
-
-.breadcrumb .location a:hover {
+.breadcrumb a:hover {
   background-color: blue;
 }
-.breadcrumb .location a:hover::before {
+.breadcrumb a:hover::before {
   border-color: blue;
   border-left-color: transparent;
 }
-.breadcrumb .location a:hover::after {
+.breadcrumb a:hover::after {
   border-left-color: blue;
 }
