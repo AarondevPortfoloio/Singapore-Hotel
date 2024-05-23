@@ -5,7 +5,7 @@
 --Description 
 
 Example homepage for a singapore hotel franchise.
-It inclues styling and examplem of breadcrumb list item use.
+It demonstrates styling and example of breadcrumb list item use.
 Created with html and css.
 
 
